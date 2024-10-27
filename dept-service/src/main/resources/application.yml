@@ -1,2 +1,16 @@
 server:
   port: 9001
+
+spring:
+  application:
+    name: dept-service
+
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:8767/eureka/ # Replace 'localhost' with your actual hostname if needed
+
+  instance:
+    hostname: localhost # Replace 'localhost' with your desired hostname

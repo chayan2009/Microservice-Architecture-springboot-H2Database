@@ -40,7 +40,7 @@ public class UsersService {
     
         // Fetch department details using RestTemplate
         Department department = restTemplate.getForObject(
-            "http://localhost:9001/departments/" + users.getDepartmentId(), 
+            "http://DEPT-SERVICE/departments/" + users.getDepartmentId(), 
             Department.class
         );
     
