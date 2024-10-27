@@ -4,3 +4,13 @@ server:
 spring:
   application:
     name: DEPT-SERVICE
+
+springdoc:
+  api-docs:
+    path: /v3/api-docs
+  swagger-ui:
+    path: /swagger-ui.html
+    operationsSorter: method
+    display-request-duration: true
+    doc-expansion: none
+
