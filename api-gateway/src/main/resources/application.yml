@@ -5,6 +5,9 @@ spring:
   application:
     name: API-GATEWAY
 
+  main:
+    web-application-type: reactive
+    
   cloud:
     gateway:
       discovery:
@@ -22,17 +25,9 @@ spring:
           predicates:
             - Path=/users/**
 
-eureka:
-  client:
-    register-with-eureka: true
-    fetch-registry: true
-    service-url:
-      defaultZone: http://localhost:8767/eureka/
-
-  instance:
-    hostname: localhost
-
 logging:
   level:
     org.springframework.cloud.gateway: DEBUG
     org.springframework.cloud.loadbalancer: DEBUG
+
+
